@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewNomePaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Paciente"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewNivelDor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nível de Dor"/>
+
+    <TextView
+        android:id="@+id/textViewConforto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conforto"/>
+
+    <TextView
+        android:id="@+id/textViewFadiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fadiga"/>
+
+    <TextView
+        android:id="@+id/textViewQualidadeSono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qualidade do Sono"/>
+
+    <TextView
+        android:id="@+id/textViewApetite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apetite"/>
+
+    <TextView
+        android:id="@+id/textViewBatimentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batimentos Cardíacos"/>
+
+    <TextView
+        android:id="@+id/textViewPressao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressão Arterial"/>
+    <TextView
+        android:id="@+id/textViewTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperatura Salva"/>
+</LinearLayout>

@@ -1,0 +1,173 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvNomePaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Paciente"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:id="@+id/etNomePaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNomePaciente"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvNivelDor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nível de Dor (0-10)"
+            android:layout_below="@id/etNomePaciente"/>
+
+        <EditText
+            android:id="@+id/etNivelDor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@id/tvNivelDor"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvConforto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conforto (0-10)"
+            android:layout_below="@id/etNivelDor"/>
+
+        <EditText
+            android:id="@+id/etConforto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@id/tvConforto"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvFadiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fadiga (0-10)"
+            android:layout_below="@id/etConforto"/>
+
+        <EditText
+            android:id="@+id/etFadiga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@id/tvFadiga"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvQualidadeSono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualidade do Sono (0-10)"
+            android:layout_below="@id/etFadiga"/>
+
+        <EditText
+            android:id="@+id/etQualidadeSono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@id/tvQualidadeSono"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvApetite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apetite (0-10)"
+            android:layout_below="@id/etQualidadeSono"/>
+
+        <EditText
+            android:id="@+id/etApetite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@id/tvApetite"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvBatimentos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batimentos Cardíacos (0-300)"
+            android:layout_below="@id/etApetite"/>
+
+        <EditText
+            android:id="@+id/etBatimentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@id/tvBatimentos"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvPressao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pressão Arterial (formato XXX/YY)"
+            android:layout_below="@id/etBatimentos"/>
+
+        <EditText
+            android:id="@+id/etPressao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPressao"
+            android:layout_alignParentStart="true"/>
+
+        <!-- Campo de temperatura -->
+        <TextView
+            android:id="@+id/tvTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperatura Atual:"
+            android:layout_below="@id/etPressao"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Temperatura Atual"
+            android:layout_below="@id/tvTemperatura"
+            android:layout_alignParentStart="true"/>
+        <!-- Fim do campo de temperatura -->
+
+        <TextView
+            android:id="@+id/tvDadosAnteriores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dados Anteriores"
+            android:layout_below="@id/etTemperatura"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentStart="true"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDadosAnteriores"
+            android:scrollbars="vertical"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submeter Formulário"
+            android:layout_below="@id/recyclerViewForm"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</ScrollView>
